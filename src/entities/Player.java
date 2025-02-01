@@ -7,7 +7,6 @@ import static utilz.Constansts.Directions.UP;
 import static utilz.Constansts.PlayerConstants.GetSpriteAmount;
 import static utilz.Constansts.PlayerConstants.IDLE;
 import static utilz.Constansts.PlayerConstants.RUNNING;
-
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -91,7 +90,7 @@ public class Player extends Entity{
 	
 	
 	private void loadAnimations() {
-		InputStream is = getClass().getResourceAsStream("/player_sprites.png");
+		InputStream is = getClass().getResourceAsStream("../res/player_sprites.png");
 		try {
 			BufferedImage img = ImageIO.read(is);
 			animations = new BufferedImage[9][6];
